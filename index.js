@@ -1,8 +1,12 @@
 import bot from "./bot.js";
-import { start, help } from "./botInitialCommands.js";
+import { start, help } from "./src/bot commands/botInitialCommands.js";
 import { descriptions } from "./utils.js";
-import { praise, counter, deleteMessages } from "./botCommands.js";
-import { stopWorkingInterval } from "./botQuickActions.js";
+import {
+  praise,
+  deleteMessages,
+  counter,
+} from "./src/bot commands/botCommands.js";
+import { stopWorkingInterval } from "./src/bot commands/botQuickActions.js";
 
 // INITIAL COMMANDS
 start;

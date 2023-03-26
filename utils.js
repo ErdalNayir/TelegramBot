@@ -34,6 +34,10 @@ export const descriptions = bot.telegram.setMyCommands([
     command: "sil",
     description: "Bütün mesajları siler",
   },
+  {
+    command: "arabul",
+    description: "[ARANACAK METİN] -- En ilgili beş sonucu gösterir",
+  },
 ]);
 
 //PRAISES FOR /ovgu

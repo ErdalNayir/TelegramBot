@@ -1,5 +1,5 @@
-import bot from "./bot.js";
-import { commands } from "./utils.js";
+import bot from "../../bot.js";
+import { commands } from "../../utils.js";
 
 export const start = bot.start((ctx) => {
   ctx.reply(

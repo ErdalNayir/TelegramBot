@@ -1,4 +1,4 @@
-import bot from "./bot.js";
+import bot from "../../bot.js";
 import { intervalId } from "./botCommands.js";
 
 //stops all intervals

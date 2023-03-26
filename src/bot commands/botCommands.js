@@ -1,6 +1,6 @@
-import bot from "./bot.js";
-import { praises } from "./utils.js";
-
+import bot from "../../bot.js";
+import { praises } from "../../utils.js";
+import { getSearchResults } from "../services/searchServices.js";
 export var intervalId; //it will store working interval
 
 //  /ovgu
@@ -30,4 +30,17 @@ export const deleteMessages = bot.command("sil", async (ctx) => {
       break;
     }
   }
+});
+
+export const getPopularSearchResult = bot.command("arabul", async (ctx) => {
+  const message = ctx.message.text;
+  const searchtring = message.split("arabul")[1]; // get search
+
+  await getSearchResults(searchtring).then((data) => {
+    const results = data["items"];
+
+    for (var i = 0; i < 5; i++) {
+      ctx.reply(results[i]["link"]);
+    }
+  });
 });
