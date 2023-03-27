@@ -6,6 +6,7 @@ export const commands = [
   "/hava : Güncel hava durumunu gösterir\n",
   "/sayac : 0 dan sonsuza kadar birer saniye ile sayar\n",
   "/sil : Bu chatteki bütün mesajları siler\n",
+  "/arabul : Aramak istediğiniz şeyleri sizin için arar ve sonuçlarını döndürür",
 ];
 
 //DESCRIPTIONS FOR COMMANDS

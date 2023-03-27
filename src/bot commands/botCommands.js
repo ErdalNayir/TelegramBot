@@ -36,11 +36,19 @@ export const getPopularSearchResult = bot.command("arabul", async (ctx) => {
   const message = ctx.message.text;
   const searchtring = message.split("arabul")[1]; // get search
 
-  await getSearchResults(searchtring).then((data) => {
-    const results = data["items"];
+  getSearchResults(searchtring)
+    .then((data) => {
+      const results = data["items"];
 
-    for (var i = 0; i < 5; i++) {
-      ctx.reply(results[i]["link"]);
-    }
-  });
+      for (var i = 0; i < 5; i++) {
+        ctx.reply(results[i]["link"]);
+      }
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+});
+
+export const hava = bot.command("hava", (ctx) => {
+  ctx.reply("Bu komut daha yapım aşamasında :p");
 });
