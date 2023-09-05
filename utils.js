@@ -6,7 +6,8 @@ export const commands = [
   "/hava : Güncel hava durumunu gösterir\n",
   "/sayac : 0 dan sonsuza kadar birer saniye ile sayar\n",
   "/sil : Bu chatteki bütün mesajları siler\n",
-  "/arabul : Aramak istediğiniz şeyleri sizin için arar ve sonuçlarını döndürür",
+  "/arabul : Aramak istediğiniz şeyleri sizin için arar ve sonuçlarını döndürür\n",
+  // "/chatBot : Yapay zekaya istediğiniz soruyu sorun",
 ];
 
 //DESCRIPTIONS FOR COMMANDS
@@ -39,6 +40,10 @@ export const descriptions = bot.telegram.setMyCommands([
     command: "arabul",
     description: "[ARANACAK METİN] -- En ilgili beş sonucu gösterir",
   },
+  // {
+  //   command: "chatBot",
+  //   description: "[ARANACAK METİN] -- Yapay zekayla mesajlaş",
+  // },
 ]);
 
 //PRAISES FOR /ovgu

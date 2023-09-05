@@ -1,6 +1,6 @@
 import bot from "../../bot.js";
 import { praises } from "../../utils.js";
-import { getSearchResults } from "../services/searchServices.js";
+import {getSearchResults} from "../services/searchServices/searchServices.js"
 export var intervalId; //it will store working interval
 
 //  /ovgu

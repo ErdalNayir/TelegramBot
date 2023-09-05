@@ -5,20 +5,28 @@ import {
   praise,
   deleteMessages,
   counter,
+  getPopularSearchResult,
 } from "./src/bot commands/botCommands.js";
 import { stopWorkingInterval } from "./src/bot commands/botQuickActions.js";
+import { chatWithGpt } from "./src/bot commands/botGptCommand.js";
 
 // INITIAL COMMANDS
 start;
 help;
 
-// DESCRIPTIONS FOR COMMANDS
-descriptions;
 
 //COMMANDS
 praise;
 counter;
 deleteMessages;
+getPopularSearchResult
+chatWithGpt
+
+
+// DESCRIPTIONS FOR COMMANDS
+descriptions;
+
+
 
 //QUICK ACTIONS
 stopWorkingInterval;
