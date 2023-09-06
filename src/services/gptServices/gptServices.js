@@ -9,10 +9,10 @@ export const getChatGPTResponse = async (prompt) => {
       const response = await axios.post(
         `${process.env.ENDPOINT_GPT}`,
         {
-            prompt: prompt,
-            max_tokens: 60,
-            n: 1,
-            stop: '\n',
+          prompt: "How are you?",
+          model: "gpt-3.5-turbo",
+          max_tokens: 10,
+          temperature: 0,
         },
         {
           headers: {
@@ -25,7 +25,7 @@ export const getChatGPTResponse = async (prompt) => {
       
       return completion;
     } catch (error) {
-      console.error('API isteği başarısız oldu:', error.message);
+      console.error('API isteği başarısız oldu:', error);
       throw error;
     }
   }

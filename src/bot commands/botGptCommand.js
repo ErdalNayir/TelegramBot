@@ -1,9 +1,9 @@
 import { getChatGPTResponse } from "../services/gptServices/gptServices.js";
 import bot from "../../bot.js";
 
-export const chatWithGpt = bot.command("chatBot", async (ctx) => {
+export const chatWithGpt = bot.command("chatbot", async (ctx) => {
     const message = ctx.message.text;
-    const searchtring = message.split("chatBot")[1]; // get search
+    const searchtring = message.split("chatbot")[1]; // get search
   
     getChatGPTResponse(searchtring)
       .then((data) => {
